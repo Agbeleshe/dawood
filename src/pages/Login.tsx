@@ -1,11 +1,9 @@
 import { useMemo, useState, type FormEvent } from 'react';
-import { ArrowRight, Car, ShieldCheck, Siren } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { ROLES, type RoleDef } from '../data/roles';
 import { agents, DEMO_PASSWORD } from '../data/seed';
 import { useCommand } from '../store';
 import type { AgencyRole } from '../types';
-
-const skyline = [22, 34, 28, 42, 18, 36, 30, 48, 24, 38, 20, 32, 44, 18, 30, 26, 40, 22, 34, 28];
 
 export function Login() {
   const login = useCommand((s) => s.login);
@@ -47,7 +45,6 @@ export function Login() {
           </p>
       
         </div>
-       S
       </div>
 
       <div className="login-right">
